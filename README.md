@@ -43,4 +43,4 @@
 
 Fun little project, fairly open ended and didn't run into any roadblocks trying to implement it. Appreciate the callout on the time constraint because it'd be easy enough to keep trying to find ways to improve it, but I don't feel that's the point of the assignment.
 
-If I didn't go into enough detail within here, please let me know! I'm Hhppy to discuss any portion of this further.
+If I didn't go into enough detail within here, please let me know! I'm happy to discuss any portion of this further.
