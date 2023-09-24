@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+## Pre-Reqs already installed
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- Yarn
+- npm
 
-## Available Scripts
+## Steps to launch
 
-In the project directory, you can run:
+- Navigate to directory in shell of your choosing
+- yarn start
+- Navigate to localhost:3000 (default for npm / yarn)
 
-### `npm start`
+## Summary
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- List Page that lists all entries retrieved from the API call
+  - All "inactive" locations are hidden by default, but I included a checkbox to show inactive locations. They will be highlighted in red once shown.
+- Details page that lists the Name and _primary_ address of the selected item
+- Validated that network calls only occur once on navigating to the page the first time. Navigating within the page does not cause further API calls.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Library Usage
 
-### `npm test`
+- Mainly stuck to mui for the sake of consistency and as it was recommended
+- Used Axios for making the API calls required
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Project Expansions
 
-### `npm run build`
+- No notes were currently available, but adding a field for them with a submit button to update the data stored online through an API call would be a good start.
+- It might be more informative to include all addresses on the details page, or at least a way to list them out, as currently there's no possibility to do so.
+- I implemented for a way to show inactive sites, but better that that would be a selectable filter between all of the different fields, or even a search bar that filters as you type.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Known issues
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Refreshing on the "Details" page after selecting an item will cause an error as the contexts are cleared within react
+  - This could be resolved by storing the data in local storage or making a new api call if the contexts were found to be empty.
+  - I wasn't sure how deep to go into improving / expanding on this project so leaving this discovery as is with potential solutions ready.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+\-
 
-### `npm run eject`
+\-
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+\-
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### PS
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Fun little project, fairly open ended and didn't run into any roadblocks trying to implement it. Appreciate the callout on the time constraint because it'd be easy enough to keep trying to find ways to improve it, but I don't feel that's the point of the assignment.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+If I didn't go into enough detail within here, please let me know! I'm Hhppy to discuss any portion of this further.
